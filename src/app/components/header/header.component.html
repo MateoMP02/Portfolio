@@ -1,0 +1,13 @@
+<header>
+  <nav class="idiomas">
+    <select id="idioma-select" (change)="cambiarIdioma($event)">
+      <option value="es">Español</option>
+      <option value="en">English</option>
+    </select>
+  </nav>
+
+  <nav class="tecnologias">{{ 'TECNOLOGIAS' | translate }}</nav>
+  <nav class="about-me">{{ 'ABOUT_ME' | translate }}</nav>
+  <nav class="logo-github">GitHub</nav>
+  <nav class="logo-linkedin">LinkedIn</nav>
+</header>
