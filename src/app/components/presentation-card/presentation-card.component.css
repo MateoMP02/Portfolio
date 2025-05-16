@@ -1,0 +1,48 @@
+.card {
+  color: #333;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease; 
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: left;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Hover effect */
+.card:hover {
+  background-color: #0a122e;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card a {
+  display: inline-flex; 
+  align-items: center;  
+  gap: 8px;             
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  background: linear-gradient(to left, #090f26, #24283a);
+  padding: 8px 16px;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card a img {
+  height: 20px;         
+  width: auto;
+}
+
+
+.card a:hover {
+  transform: scale(1.05); 
+}
+
+
+.links-card{
+    display: flex;
+    gap: 10px;
+}

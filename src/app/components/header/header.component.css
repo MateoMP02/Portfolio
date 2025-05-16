@@ -1,0 +1,105 @@
+/* Estilo general para el header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(3, 18, 39, 0.4); /* Azul oscuro con transparencia */
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  backdrop-filter: blur(10px);      /* Desenfoque */
+  -webkit-backdrop-filter: blur(10px); /* Soporte para Safari */
+}
+
+/* Estilos para la sección de idiomas */
+.idiomas select {
+  background-color: #34495E;
+  color: white;
+  border: none;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos para la barra de navegación */
+.navegacion {
+  display: flex;
+  gap: 30px;
+}
+
+.navegacion a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.navegacion a:hover {
+  background-color: #1ABC9C;
+}
+
+/* Estilos para los logos */
+.logos a {
+  margin-left: 15px;
+}
+
+.logos img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.logos img:hover {
+  transform: scale(1.2);
+}
+
+/* Media queries para hacerlo responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  /* Ajuste de la barra de navegación */
+  .navegacion {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Ajuste del select de idioma */
+  .idiomas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Logos en un solo alineado */
+  .logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* En pantallas muy pequeñas, los enlaces de la barra de navegación se hacen más pequeños */
+  .navegacion a {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+  
+  .logos img {
+    width: 25px;
+    height: 25px;
+  }
+}

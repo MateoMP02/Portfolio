@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilos globales para la página */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+  width: 100%; 
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Fondo degradado para toda la página */
+body {
+  background: radial-gradient(
+    circle at top center,     /* Fuente de luz circular arriba */
+    #0a1530 10%,              /* Color más claro en el centro (solo un poco) */
+    #0a122e 20%,              /* Más oscuro en la distancia */
+    #070a17 50%  
+);
+
+  height: 100%;  
+  width: 100%;   
+}
+

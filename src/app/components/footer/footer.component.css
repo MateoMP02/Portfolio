@@ -1,0 +1,39 @@
+/* Footer styling */
+footer {
+  background-color: #070a17;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .links {
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+  flex-wrap: wrap; /* Permite que los enlaces salten de línea si no hay espacio */
+}
+
+footer .links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+footer .links a:hover {
+  text-decoration: underline;
+}
+
+/* 📱 Responsive para móviles */
+@media (max-width: 600px) {
+  footer .links {
+    flex-direction: column;     /* Poner los enlaces en columna */
+    align-items: center;        /* Centrar los enlaces horizontalmente */
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  footer {
+    padding: 20px 10px;
+  }
+}

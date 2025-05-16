@@ -1,13 +1,23 @@
 <header>
-  <nav class="idiomas">
-    <select id="idioma-select" (change)="cambiarIdioma($event)">
-      <option value="es">Español</option>
-      <option value="en">English</option>
-    </select>
-  </nav>
+    <div class="idiomas">
+        <select id="idioma-select">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+        </select>
+    </div>
 
-  <nav class="tecnologias">{{ 'TECNOLOGIAS' | translate }}</nav>
-  <nav class="about-me">{{ 'ABOUT_ME' | translate }}</nav>
-  <nav class="logo-github">GitHub</nav>
-  <nav class="logo-linkedin">LinkedIn</nav>
+    <nav class="navegacion">
+        <a href="#tecnologias" id="tecnologias">Tecnologías</a>
+        <a href="#about-me" id="about-me">Acerca de mí</a>
+    </nav>
+
+    
+    <div class="logos">
+        <a href="https://github.com/MateoMP02/Portfolio.git" target="_blank">
+            <img src="github-icon.webp" alt="GitHub Logo">
+        </a>
+        <a href="https://www.linkedin.com/in/mateo-martinez-prieto-849297311/" target="_blank">
+            <img src="linkedin-icon.png" alt="LinkedIn Logo">
+        </a>
+    </div>
 </header>
