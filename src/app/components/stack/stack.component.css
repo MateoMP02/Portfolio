@@ -12,8 +12,8 @@ h1{
 }
 
 section{
-    width: 310px;
-    height: 320px;
+    width: 350px;
+    height: 350px;
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s ease;
@@ -23,7 +23,7 @@ section{
     #070a17 20%,
     #05070f 50%
   );
-    box-shadow: 0 0 3px rgba(255, 255, 255, 0.08); /* halo blanco sutil */
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.08); 
 }
 
 section h1 {
@@ -39,40 +39,36 @@ section:hover{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-ul{
+ul {
     color: white;
     list-style-type: none;
-    display: flex;
-    font-size: 14px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Máximo 3 elementos por fila */
     gap: 20px;
-    flex-wrap: wrap;
     padding: 0 10px;
 }
 
-li{
+li {
     display: flex;
     flex-direction: column;
-    gap: 5px; /* distancia entre logo y palabra*/
-    flex: 1 1 1 33%; /*maximo 3 logos por fila*/
+    gap: 5px; /* distancia entre logo y palabra */
     margin: 14px; 
-    flex-direction: column; /*imagen y palabra en columna*/
-    align-items: center; 
+    align-items: center;
 }
-
 
 li img {
   width: 50px;
   height: 50px;
-  object-fit: contain; /* Asegura que las imágenes se ajusten dentro del contenedor sin distorsionarse */
+  object-fit: contain; 
 }
 
 
 .principal-container {
     display: flex;
     flex-direction: column;
-    width: 630px;
-    margin: 0 auto; /* Centra el contenedor */
-    padding: 20px; /* Agrega espacio alrededor */
+    width: 700px;
+    margin: 0 auto; 
+    padding: 20px; 
 }
 
 
