@@ -1,0 +1,73 @@
+h1{
+    align-items: center;
+    text-align: center;
+}
+
+.grid-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 0fr);
+    gap: 30px;
+
+}
+
+section{
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    background: linear-gradient(
+    to left,
+    #070a17 20%,
+    #05070f 50%
+  );
+}
+
+section:hover{
+    background-color: #0a122e;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+ul{
+    color: white;
+    list-style-type: none;
+    display: flex;
+    font-size: 14px;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* distancia entre logo y palabra*/
+    flex: 1 1 1 30%; /*maximo 3 logos por fila*/
+    margin: 10px; 
+    flex-direction: column; /*imagen y palabra en columna*/
+    align-items: center; 
+}
+
+
+li img {
+  width: 50px; /* Establece un ancho fijo para todas las imágenes */
+  height: 50px; /* Establece una altura fija para todas las imágenes */
+  object-fit: contain; /* Asegura que las imágenes se ajusten dentro del contenedor sin distorsionarse */
+}
+
+
+
+
+/*cambiar*/
+
+h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+p{
+    color: white;
+}

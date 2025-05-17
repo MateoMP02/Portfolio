@@ -1,22 +1,21 @@
-/* Estilos globales para la página */
-html, body {
+html {
+  background: radial-gradient(
+    circle at top center,
+    #0a1530 10%,
+    #0a122e 20%,
+    #070a17 50%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  min-height: 100%;
+  
+}
+
+body {
   margin: 0;
   padding: 0;
-  height: 100%; 
-  width: 100%; 
   font-family: 'Roboto', sans-serif;
+  min-height: 100%;
+  background: transparent; 
 }
-
-/* Fondo degradado para toda la página */
-body {
-  background: radial-gradient(
-    circle at top center,     /* Fuente de luz circular arriba */
-    #0a1530 10%,              /* Color más claro en el centro (solo un poco) */
-    #0a122e 20%,              /* Más oscuro en la distancia */
-    #070a17 50%  
-);
-
-  height: 100%;  
-  width: 100%;   
-}
-
