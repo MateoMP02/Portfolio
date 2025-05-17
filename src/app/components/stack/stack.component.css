@@ -12,17 +12,26 @@ h1{
 }
 
 section{
-    width: 300px;
-    height: 300px;
+    width: 310px;
+    height: 320px;
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s ease;
-    border-radius: 8px;
+    border-radius: 17px;
     background: linear-gradient(
-    to left,
+    to right,
     #070a17 20%,
     #05070f 50%
   );
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.08); /* halo blanco sutil */
+}
+
+section h1 {
+    margin-bottom: 10px; /*espacio entre titulo y lista*/
+}
+
+section ul {
+    margin-top: 0; 
 }
 
 section:hover{
@@ -35,39 +44,68 @@ ul{
     list-style-type: none;
     display: flex;
     font-size: 14px;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
-    padding: 0;
+    padding: 0 10px;
 }
 
 li{
     display: flex;
     flex-direction: column;
-    gap: 10px; /* distancia entre logo y palabra*/
-    flex: 1 1 1 30%; /*maximo 3 logos por fila*/
-    margin: 10px; 
+    gap: 5px; /* distancia entre logo y palabra*/
+    flex: 1 1 1 33%; /*maximo 3 logos por fila*/
+    margin: 14px; 
     flex-direction: column; /*imagen y palabra en columna*/
     align-items: center; 
 }
 
 
 li img {
-  width: 50px; /* Establece un ancho fijo para todas las imágenes */
-  height: 50px; /* Establece una altura fija para todas las imágenes */
+  width: 50px;
+  height: 50px;
   object-fit: contain; /* Asegura que las imágenes se ajusten dentro del contenedor sin distorsionarse */
 }
 
 
-
-
-/*cambiar*/
-
-h2{
+.principal-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    width: 630px;
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 20px; /* Agrega espacio alrededor */
+}
+
+
+.principal-container h2, .principal-container p {
+    width: 100%;
+    max-width: 1200px; /* Ajusta el ancho al mismo de .grid-container */
+    margin: 0 auto 20px; /* Centra y agrega espacio debajo */
     color: white;
 }
 
-p{
-    color: white;
+h1{
+    font-size: 35px; 
+    font-family: 'Arial', sans-serif; 
+    color: transparent; 
+    font-weight: bold; 
+}
+
+.front h1{
+    background: linear-gradient(to bottom, #25bdf0, #d3f1fc); 
+    -webkit-background-clip: text; 
+}
+
+.back h1{
+    background: linear-gradient(to bottom, #f02525, #fcdbd8); 
+    -webkit-background-clip: text; 
+}
+
+.learning h1{
+    background: linear-gradient(to bottom, #4de033, #c7f0a7); 
+    -webkit-background-clip: text; 
+}
+
+.tools h1{
+    background: linear-gradient(to bottom, #f0a925, #ebdfbf); 
+    -webkit-background-clip: text; 
 }
